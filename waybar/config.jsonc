@@ -1,0 +1,60 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "margin-top": 6,
+    "margin-left": 10,
+    "margin-right": 10,
+
+    // Módulos da Esquerda, Centro e Direita
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "tray"],
+
+    // Configuração dos Workspaces do Hyprland
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        }
+    },
+
+    // Janela ativa
+    "hyprland/window": {
+        "format": "  {title}",
+        "max-length": 40
+    },
+
+    // Relógio
+    "clock": {
+        "format": "  {:%H:%M  -  %d/%m}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    // Processador (CPU)
+    "cpu": {
+        "format": "  {usage}%",
+        "interval": 2
+    },
+
+    // Memória RAM
+    "memory": {
+        "format": "  {percentage}%",
+        "interval": 2
+    },
+
+    // Áudio
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "🔇 Silêncio",
+        "format-icons": {
+            "default": ["", "", ""]
+        }
+    }
+}
+

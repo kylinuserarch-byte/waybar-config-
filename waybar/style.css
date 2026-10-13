@@ -1,0 +1,75 @@
+/* ==============================================================================
+   WAYBAR STYLE - CATPPUCCIN MOCHA (AZUL CLARO / CINZA)
+   ============================================================================== */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", monospace;
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #cdd6f4;
+}
+
+/* --- ESTILO DOS MÓDULOS (PILL STYLE) --- */
+#workspaces,
+#window,
+#clock,
+#pulseaudio,
+#cpu,
+#memory,
+#tray {
+    background-color: #1e1e2e;
+    padding: 4px 14px;
+    border-radius: 10px;
+    border: 2px solid #313244;
+    margin: 2px 4px;
+}
+
+/* --- WORKSPACES --- */
+#workspaces button {
+    padding: 0 5px;
+    color: #6c7086;
+    background-color: transparent;
+    border-radius: 6px;
+    margin: 0 2px;
+}
+
+#workspaces button.active {
+    color: #1e1e2e;
+    background-color: #89b4fa; /* Azul claro para o workspace ativo */
+}
+
+#workspaces button:hover {
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+/* --- JANELA EM FOCO --- */
+#window {
+    color: #a6adc8;
+}
+
+/* --- RELÓGIO (CENTRO) --- */
+#clock {
+    color: #89b4fa; /* Destaque em azul claro */
+    border-color: #89b4fa;
+}
+
+/* --- MÓDULOS DA DIREITA --- */
+#pulseaudio {
+    color: #a6e3a1; /* Verde menta leve */
+}
+
+#cpu {
+    color: #f9e2af; /* Amarelo suave */
+}
+
+#memory {
+    color: #cba6f7; /* Roxo suave */
+}
